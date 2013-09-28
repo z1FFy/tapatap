@@ -1,52 +1,54 @@
-.box {
+	body {
+		background-color: #bcbbbb;
+	}
+	#game {
+		margin-left: 30%;
+	}
+	.box {
+	float: left;
+	margin-left: 40px;
+	margin-top: 50px; 
+	background-color: #4a4a4a;
+	width:100px;
+	height: 500px;
+	}	
+	.line {
+	position: absolute;
+	float: left;
+	background-image: url('but.png');
+	width:101px;
+	height: 40px;
+	top: 100px;
+	-webkit-animation-name: 'movement';
+	-webkit-animation-duration: 1s;
+		animation-name: 'movement';
+		animation-duration: 10s;
 
-			float: left;
-			margin-left: 40px;
-			margin-top: 50px; 
-			background-color: #4a4a4a;
-			width:100px;
-			height: 500px;
-		}	
-		.line {
-			position: absolute;
-			float: left;
-			background-color: #7b7b7b;
-			width:100px;
-			height: 70px;
-			top: 100px;
-			-webkit-animation-name: 'movement';
-			-webkit-animation-duration: 1s;
-				animation-name: 'movement';
-				animation-duration: 10s;
-
-					}	
-		.act {
-			background-color: red;
-		}
-		@-webkit-keyframes 'movement' {
-    from {
+			}	
+	.act {
+	background-color: red;
+	}
+	@-webkit-keyframes 'movement' {
+	from {
 	top: 60px;
-    }
-    20% {
-	    top	: 200px;
-    }
-    to {
+	}
+	20% {
+	top	: 200px;
+	}
+	to {
 	top: 600px;
-		visibility: hidden;
-    }	
-}
-@keyframes 'movement' {
-    from {
-	top: 50px;
-	left: 0px;
-    }
-    50% {
-	top: 150px;
-	left: 100px;
-    }
-    to {
-	top: 50px;
-	left: 0px;
 	visibility: hidden;
-    }	
-}
+	}	
+	}
+	@keyframes 'movement' {
+	from {
+	top: 50px;
+	}
+	20% {
+	top	: 200px;
+	}
+	to {
+	top: 600px;
+	visibility: hidden;
+	}	
+	}
